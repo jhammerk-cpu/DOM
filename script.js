@@ -9,3 +9,7 @@ document.getElementById('HideClickCounter').addEventListener('click', () => {
       document.getElementById('counter').classList.toggle('hidden');
   });
 
+document.getElementById('input').addEventListener('input', function() {
+    const typedText = document.getElementById('typedText');
+    typedText.textContent = this.value;
+});
